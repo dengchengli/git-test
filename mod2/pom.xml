@@ -6,7 +6,6 @@
 		<groupId>com.pre</groupId>
 		<artifactId>git-test</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.common</groupId>
 	<artifactId>mod2</artifactId>
