@@ -6,7 +6,13 @@
     <groupId>com.pre</groupId>
     <artifactId>git-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <!-- 必须是pom类型 -->
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>mod1</module>
+        <module>mod2</module>
+    </modules>
 
     <name>git-test</name>
     <description>Demo project for Spring Boot</description>
@@ -43,6 +49,17 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- 指定入口类 -->
+                <configuration>
+                    <mainClass>com.common.mod2.Mod2Application</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
