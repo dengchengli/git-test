@@ -21,6 +21,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!-- springboot项目打包时，会生成两个jar包，后边后边生成的为可执行jar,会覆盖前边的，因为子模块被依赖的jar为非可执行的 -->
 				<configuration>
 					<classifier>exec</classifier>
 				</configuration>
