@@ -1,7 +1,5 @@
 package com.common.mod2.controller;
 
-
-
 import com.common.mod1.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
